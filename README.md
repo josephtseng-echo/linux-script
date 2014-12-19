@@ -6,7 +6,7 @@ svn_bak.sh svn备份
 
 rsync.py svn自动发布脚本
 ------
-使用方法
+### 使用方法
 vim svn项目/hooks/post-commit
 #!/bin/sh
 REPOS="$1"
