@@ -12,3 +12,7 @@ rsync.py svn自动发布脚本
     REPOS="$1"
     REV="$2"
     su josephzeng -c "/usr/local/bin/python2.7 /data1/tools/svn/rsync.py ${REPOS} ${REV} svn项目"
+
+ffmpeg_core.py ffmpeg压制类库
+------
+    使用方法 略
