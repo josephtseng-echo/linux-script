@@ -2,6 +2,7 @@ linux
 =====
 
 check_storm.sh storm检测
+------
 	使用方法
 	mkdir -p /data2/check_storm/src
     mkdir -p /data2/check_storm/logs

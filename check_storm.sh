@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #log
 LOG="../logs/check_storm.log".`date +"%Y%m%d"`
 
