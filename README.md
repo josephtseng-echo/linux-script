@@ -1,6 +1,21 @@
 linux
 =====
 
+drop_caches.sh 当free -m  cached超过6000 进行释放内存
+------
+    使用方法
+    设置定时任务
+
+check_zk.sh 检测
+------
+	使用方法
+	mkdir -p /data2/check_zk/src
+    mkdir -p /data2/check_zk/logs
+    
+    设置定时任务
+    #check storm
+	*/10 * * * * ( cd /data2/check_zk/src/ && /bin/sh check_zk.sh > /dev/null 2>&1 & )
+
 check_storm.sh storm检测
 ------
 	使用方法
