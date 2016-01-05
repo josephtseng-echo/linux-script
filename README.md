@@ -4,6 +4,7 @@ linux
 drop_caches.sh
 ------
     当free -m  cached超过6000 进行释放内存
+
     使用方法
     设置定时任务......
 
@@ -30,6 +31,13 @@ check_storm.sh
     设置定时任务
     #check storm
 	*/10 * * * * ( cd /data2/check_storm/src/ && /bin/sh check_storm.sh > /dev/null 2>&1 & )
+
+check_php_load.sh
+------
+	监听php情况并重启
+
+    使用方法
+    设置定时任务......
 
 svn_bak.sh
 ------
