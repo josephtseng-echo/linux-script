@@ -1,15 +1,13 @@
-linux
-=====
-
+# linux
+## script
+```
 drop_caches.sh
-------
     当free -m  cached超过6000 进行释放内存
 
     使用方法
     设置定时任务......
 
 check_zk.sh
-------
     zk检测
  
 	使用方法
@@ -21,7 +19,6 @@ check_zk.sh
 	*/10 * * * * ( cd /data2/check_zk/src/ && /bin/sh check_zk.sh > /dev/null 2>&1 & )
 
 check_storm.sh
-------
     storm检测
 
 	使用方法
@@ -33,18 +30,15 @@ check_storm.sh
 	*/10 * * * * ( cd /data2/check_storm/src/ && /bin/sh check_storm.sh > /dev/null 2>&1 & )
 
 check_php_load.sh
-------
 	监听php情况并重启
 
     使用方法
     设置定时任务......
 
 svn_bak.sh
-------
 	svn + rsync 备份
 
 rsync.py
-------
 	svn自动发布脚本
 
     使用方法
@@ -55,7 +49,10 @@ rsync.py
     su josephzeng -c "/usr/local/bin/python2.7 /data1/tools/svn/rsync.py ${REPOS} ${REV} svn项目"
 
 ffmpeg_core.py
-------
 	ffmpeg压制类库
-
     使用方法 略
+    
+svn_find_about.sh
+    根据关键字 快速定位查找svn代码修改文件
+    详细看文件头部注释
+```
