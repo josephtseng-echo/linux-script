@@ -17,5 +17,5 @@ str=$( free -m )
 arr=(${str// / })
 check=$(expr ${arr[12]} + 0)
 if [ ${check} -gt 6000  ];then
-    ( echo 1 >  /proc/sys/vm/drop_cache )
+    ( echo 3 >  /proc/sys/vm/drop_caches )
 fi
