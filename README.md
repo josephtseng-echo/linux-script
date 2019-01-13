@@ -56,3 +56,9 @@ svn_find_about.sh
     根据关键字 快速定位查找svn代码修改文件
     详细看文件头部注释
 ```
+
+## shell
+```
+./shell/check_app.sh #程序检测及自启 在crontab加上 定时执行即可
+
+```
